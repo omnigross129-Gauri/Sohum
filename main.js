@@ -12,6 +12,20 @@ function closePopup() {
   }
 }
 
+function openThankYouPopup() {
+  const popup = document.getElementById("thankYouPopup");
+  if (popup) {
+    popup.style.display = "flex";
+  }
+}
+
+function closeThankYouPopup() {
+  const popup = document.getElementById("thankYouPopup");
+  if (popup) {
+    popup.style.display = "none";
+  }
+}
+
 function initFaq() {
   const faqItems = document.querySelectorAll(".faq-item");
 
@@ -119,12 +133,67 @@ function initMobileNav() {
   });
 }
 
+function initDemoForm() {
+  const form = document.getElementById("demoSessionForm");
+  if (!form) return;
+
+  form.addEventListener("submit", function () {
+    const submitButton = form.querySelector('button[type="submit"]');
+    if (submitButton) {
+      submitButton.disabled = true;
+      submitButton.textContent = "Submitting...";
+    }
+  
+  });
+}
 document.addEventListener("DOMContentLoaded", () => {
   initFaq();
+  initDemoForm();
   loadComponent("header", "components/navbar.html").then((loaded) => {
     if (loaded) {
       initMobileNav();
     }
   });
   loadComponent("footer", "components/footer.html");
+});
+
+
+document.addEventListener("DOMContentLoaded", function () {
+
+    const form = document.getElementById("demoSessionForm");
+    const thankYouPopup = document.getElementById("thankYouPopup");
+
+    if (!form) return;
+
+    form.addEventListener("submit", function (e) {
+        e.preventDefault();
+
+        const submitBtn = form.querySelector("button[type='submit']");
+        submitBtn.disabled = true;
+        submitBtn.innerText = "Submitting...";
+
+        const formData = new FormData(form);
+
+        fetch(form.action, {
+            method: "POST",
+            body: formData
+        })
+        .then(() => {
+
+            // Reset form
+            form.reset();
+
+            // Show Thank You popup
+            if (thankYouPopup) {
+                thankYouPopup.style.display = "flex";
+            }
+
+        })
+        .finally(() => {
+            submitBtn.disabled = false;
+            submitBtn.innerText = "Submit";
+        });
+
+    });
+
 });

@@ -480,19 +480,28 @@
 
         <h2>Reserve Your Spot</h2>
 
-        <form>
-            <input type="text" placeholder="Full Name" required>
-            <input type="tel" placeholder="Mobile Number" required>
-            <input type="email" placeholder="Email Address" required>
-            <select required>
+        <form id="demoSessionForm" action="api/save_demo_form.php" method="POST">
+            <input type="text" name="full_name" placeholder="Full Name" required>
+            <input type="tel" name="mobile_number" placeholder="Mobile Number" required>
+            <input type="email" name="email_address" placeholder="Email Address" required>
+            <select name="course" required>
                 <option value="">Select Course</option>
-                <option>Insurance Training</option>
-                <option>Share Market</option>
-                <option>Other</option>
+                <option value="Insurance Training">Insurance Training</option>
+                <option value="Share Market">Share Market</option>
+                <option value="Other">Other</option>
             </select>
             <button type="submit">Submit</button>
         </form>
 
+    </div>
+</div>
+
+<div class="popup-overlay" id="thankYouPopup">
+    <div class="popup-content popup-success">
+        <span class="close-btn" onclick="closeThankYouPopup()">&times;</span>
+        <h2>Thank You</h2>
+        <p>Your demo session request has been submitted successfully.</p>
+        <button type="button" onclick="closeThankYouPopup()">Close</button>
     </div>
 </div>
 
