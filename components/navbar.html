@@ -1,98 +1,116 @@
 <!-- top contact bar -->
-    <div class="top-bar">
-        <div class="container">
-            <div class="contact-info">
-                <i class="fas fa-phone-alt"></i> <span>+91 98765 43210</span>
-                <i class="fas fa-envelope"></i> <span>info@sohamfp.in</span>
-                <i class="fas fa-map-marker-alt"></i> <span>Pune, India</span>
-            </div>
-            <div class="social-icons">
-                <a href="#"><i class="fab fa-linkedin-in"></i></a>
-                <a href="#"><i class="fab fa-twitter"></i></a>
-                <a href="#"><i class="fab fa-youtube"></i></a>
-            </div>
+<div class="top-bar">
+    <div class="container">
+        <div class="contact-info">
+            <i class="fas fa-phone-alt"></i> <span data-key="phone">+91 98765 43210</span>
+            <i class="fas fa-envelope"></i> <span data-key="email">info@sohamfp.in</span>
+            <i class="fas fa-map-marker-alt"></i> <span data-key="location">Pune, India</span>
+        </div>
+        <div class="social-icons">
+            <a href="#"><i class="fab fa-linkedin-in"></i></a>
+            <a href="#"><i class="fab fa-twitter"></i></a>
+            <a href="#"><i class="fab fa-youtube"></i></a>
         </div>
     </div>
-
-    <!-- main navigation : SILO structure visible -->
-    <nav class="main-nav">
-        <div class="nav-container">
-           <div class="logo">
-    <a href="index.html">
-        <img src="assets/logo-sohum.png" alt="Soham Financial Planner Institute Logo">
-    </a>
-    
 </div>
 
-            <button class="menu-toggle" type="button" aria-label="Toggle navigation" aria-expanded="false">
-                <span class="bar"></span>
-                <span class="bar"></span>
-                <span class="bar"></span>
-            </button>
+<nav class="main-nav">
+    <div class="nav-container">
+        <div class="logo">
+            <a href="index.html">
+                <img src="assets/logo-sohum.png" alt="Soham Financial Planner Institute Logo">
+            </a>
+        </div>
 
-            <div class="nav-links">
-                <a href="index.html">HOME</a>
+        <button class="menu-toggle" type="button" aria-label="Toggle navigation" aria-expanded="false">
+            <span class="bar"></span>
+            <span class="bar"></span>
+            <span class="bar"></span>
+        </button>
 
-                <!-- INSURANCE SILO DROPDOWN -->
-                <div class="dropdown">
-    <a href="#">INSURANCE TRAINING <i class="fas fa-chevron-down"></i></a>
-    
-    <div class="dropdown-content">
-        
-        <a href="/life-insurance-advisor-course">
-            <i class="fas fa-shield-heart"></i> Life Insurance Advisor Training
-        </a>
-        
-        <a href="/general-insurance-course">
-            <i class="fas fa-hospital"></i> General Insurance Training
-        </a>
-        
-        <a href="/health-motor-insurance-training">
-            <i class="fas fa-car"></i> Health & Motor Insurance Module
-        </a>
-        
-        <a href="/irda-exam-preparation">
-            <i class="fas fa-gavel"></i> IRDAI Exam Preparation
-        </a>
-        
-        <a href="/insurance-career-guidance">
-            <i class="fas fa-user-tie"></i> Insurance Career Guidance
-        </a>
+        <div class="nav-links">
+            <a href="index.html" data-key="nav_home">HOME</a>
 
-        <a href="/commission-earning-structure">
-            <i class="fas fa-calculator"></i> Commission & Income Structure
-        </a>
-
-        <a href="/insurance-business-setup">
-            <i class="fas fa-briefcase"></i> How to Start Insurance Business
-        </a>
-
-        <!-- <a href="/free-demo-class" class="highlight-btn">
-            <i class="fas fa-calendar-check"></i> Book Free Demo Class
-        </a> -->
-
-    </div>
-</div>
-
-
-                <!-- SHARE MARKET SILO DROPDOWN -->
-                <div class="dropdown">
-                    <a href="#">SHARE MARKET <i class="fas fa-chevron-down"></i></a>
-                    <div class="dropdown-content">
-                        <a href="share-market1.html"><i class="fas fa-chart-line"></i> Fundamental Analysis</a>
-                        <a href="#"><i class="fas fa-chart-bar"></i> Technical Analysis</a>
-                        <a href="#"><i class="fas fa-file-invoice"></i> Derivatives (F&O)</a>
-                        <a href="#"><i class="fas fa-rocket"></i> IPO Corner</a>
-                        <a href="#"><i class="fas fa-book"></i> Market Glossary</a>
-                    </div>
+            <div class="dropdown">
+                <a href="insurance-training.html" data-key="nav_insurance">INSURANCE TRAINING <i class="fas fa-chevron-down"></i></a>
+                <div class="dropdown-content">
+                    <a href="/life-insurance-advisor-course">
+                        <i class="fas fa-shield-heart"></i> <span data-key="life_insurance">Life Insurance Advisor Training</span>
+                    </a>
+                    <a href="/general-insurance-course">
+                        <i class="fas fa-hospital"></i> <span data-key="general_insurance">General Insurance Training</span>
+                    </a>
+                    <a href="/health-motor-insurance-training">
+                        <i class="fas fa-car"></i> <span data-key="health_motor">Health & Motor Insurance Module</span>
+                    </a>
+                    <a href="/irda-exam-preparation">
+                        <i class="fas fa-gavel"></i> <span data-key="irdai_exam">IRDAI Exam Preparation</span>
+                    </a>
+                    <a href="/insurance-career-guidance">
+                        <i class="fas fa-user-tie"></i> <span data-key="career_guidance">Insurance Career Guidance</span>
+                    </a>
+                    <a href="/commission-earning-structure">
+                        <i class="fas fa-calculator"></i> <span data-key="commission_income">Commission & Income Structure</span>
+                    </a>
+                    <a href="/insurance-business-setup">
+                        <i class="fas fa-briefcase"></i> <span data-key="business_setup">How to Start Insurance Business</span>
+                    </a>
                 </div>
+            </div>
 
-                <!-- COMMON PAGES -->
-                <a href="course.html">COURSES</a>
-                <a href="about.html">ABOUT</a>
-                <a href="contact.html">CONTACT</a>
+            <div class="dropdown">
+                <a href="share-market.html" data-key="nav_share">SHARE MARKET <i class="fas fa-chevron-down"></i></a>
+                <div class="dropdown-content">
+                    <a href="share-market1.html"><i class="fas fa-chart-line"></i> <span data-key="fundamental">Fundamental Analysis</span></a>
+                    <a href="#"><i class="fas fa-chart-bar"></i> <span data-key="technical">Technical Analysis</span></a>
+                    <a href="#"><i class="fas fa-file-invoice"></i> <span data-key="derivatives">Derivatives (F&O)</span></a>
+                    <a href="#"><i class="fas fa-rocket"></i> <span data-key="ipo">IPO Corner</span></a>
+                    <a href="#"><i class="fas fa-book"></i> <span data-key="glossary">Market Glossary</span></a>
+                </div>
+            </div>
 
-                <a href="#" class="cta-button"> Book Demo </a>
+            <a href="about.html" data-key="nav_about">ABOUT</a>
+            <a href="gallery.html" data-key="nav_gallery">GALLERY</a>
+            <a href="contact.html" data-key="nav_contact">CONTACT</a>
+
+            <a href="#" class="cta-button" data-key="book_demo">Book Demo</a>
+
+            <div class="language-switcher">
+                <select id="languageSwitcher">
+                    <option value="en">English</option>
+                    <option value="mr">मराठी</option>
+                    <option value="hi">हिंदी</option>
+                </select>
             </div>
         </div>
-    </nav>
+    </div>
+</nav>
+
+<!-- Global Book Demo Popup -->
+<div class="popup-overlay" id="popupForm">
+    <div class="popup-content">
+        <span class="close-btn" data-popup-close="form" role="button" aria-label="Close">&times;</span>
+        <h2 data-key="demo_popup_title">Reserve Your Spot</h2>
+        <form id="demoSessionForm" action="api/save_demo_form.php" method="POST">
+            <input type="text" name="full_name" placeholder="Full Name" data-key-placeholder="demo_name_placeholder" required>
+            <input type="tel" name="mobile_number" placeholder="Mobile Number" data-key-placeholder="demo_mobile_placeholder" required>
+            <input type="email" name="email_address" placeholder="Email Address" data-key-placeholder="demo_email_placeholder" required>
+            <select name="course" required>
+                <option value="" data-key="demo_course_select">Select Course</option>
+                <option value="Insurance Training" data-key="demo_course_insurance">Insurance Training</option>
+                <option value="Share Market" data-key="demo_course_share">Share Market</option>
+                <option value="Other" data-key="demo_course_other">Other</option>
+            </select>
+            <button type="submit" data-key="demo_submit">Submit</button>
+        </form>
+    </div>
+</div>
+
+<div class="popup-overlay" id="thankYouPopup">
+    <div class="popup-content popup-success">
+        <span class="close-btn" data-popup-close="thankyou" role="button" aria-label="Close">&times;</span>
+        <h2 data-key="demo_success_title">Thank You</h2>
+        <p data-key="demo_success_message">Your demo session request has been submitted successfully.</p>
+        <button type="button" data-popup-close="thankyou" data-key="demo_close">Send On Whatsapp</button>
+    </div>
+</div>

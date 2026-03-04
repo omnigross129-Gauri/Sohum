@@ -3,139 +3,106 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Soham Financial Planner Institute | Insurance & Share Market</title>
-    <!-- Font Awesome 6 (free) -->
+    <title data-key="contact_page_title">Soham Financial Planner Institute | Insurance & Share Market</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
     <link rel="stylesheet" href="assets/styles.css">
-    
-       
-    
 </head>
 <body>
     <div id="header"></div>
 
-<section class="talk-hero">
-
-    <div class="talk-content">
-
-        <h1>Let’s Talk <span>Financial Growth</span></h1>
-
-        <p>
-            Whether you’re looking to start your journey in Share Market Trading
-            or become a certified Insurance Advisor — our experts are ready to guide you.
-        </p>
-
-        <div class="talk-stats">
-            <div class="talk-item">✔ 100% Practical Training</div>
-            <div class="talk-item">👨‍🏫 1000+ Students Trained</div>
-            <div class="talk-item">📍 Pune & PCMC</div>
-        </div>
-
-    </div>
-
-</section>
-
-<section class="contact-pro">
-
-    <div class="contact-container">
-
-        <!-- LEFT SIDE -->
-        <div class="contact-left">
-            <h2>Get in Touch</h2>
-
-            <p>
-                Start your journey in Insurance Advisory & Share Market Trading.
-                Reach out to us for course details, demo sessions, and career guidance.
+    <section class="talk-hero">
+        <div class="talk-content">
+            <h1><span data-key="contact_hero_h1_a">Let's Talk</span> <span data-key="contact_hero_h1_b">Financial Growth</span></h1>
+            <p data-key="contact_hero_desc">
+                Whether you're looking to start your journey in Share Market Trading or become a certified Insurance Advisor, our experts are ready to guide you.
             </p>
 
-            <div class="contact-box">
-                <div class="icon">📍</div>
-                <div>
-                    <h4>Location</h4>
-                    <span>Pune & PCMC, Maharashtra</span>
-                </div>
-            </div>
-
-            <div class="contact-box">
-                <div class="icon">📞</div>
-                <div>
-                    <h4>Phone</h4>
-                    <span>+91 8551088115</span>
-                </div>
-            </div>
-
-            <div class="contact-box">
-                <div class="icon">📧</div>
-                <div>
-                    <h4>Email</h4>
-                    <span>info@sohumfinance.in</span>
-                </div>
+            <div class="talk-stats">
+                <div class="talk-item" data-key="contact_stat_1">✔ 100% Practical Training</div>
+                <div class="talk-item" data-key="contact_stat_2">✔ 1000+ Students Trained</div>
+                <div class="talk-item" data-key="contact_stat_3">✔ Pune &amp; PCMC</div>
             </div>
         </div>
+    </section>
 
-        <!-- RIGHT SIDE FORM -->
-        <div class="contact-right">
+    <section class="contact-pro">
+        <div class="contact-container">
+            <div class="contact-left">
+                <h2 data-key="contact_left_heading">Get in Touch</h2>
+                <p data-key="contact_left_desc">
+                    Start your journey in Insurance Advisory &amp; Share Market Trading. Reach out to us for course details, demo sessions, and career guidance.
+                </p>
 
-            <h3>Send Us a Message</h3>
+                <div class="contact-box">
+                    <div class="icon">📍</div>
+                    <div>
+                        <h4 data-key="contact_location_label">Location</h4>
+                        <span data-key="contact_location_value">Pune &amp; PCMC, Maharashtra</span>
+                    </div>
+                </div>
 
-            <form>
-                <input type="text" placeholder="Your Name" required>
-                <input type="email" placeholder="Your Email" required>
-                <input type="text" placeholder="Phone Number" required>
+                <div class="contact-box">
+                    <div class="icon">📞</div>
+                    <div>
+                        <h4 data-key="contact_phone_label">Phone</h4>
+                        <span>+91 8551088115</span>
+                    </div>
+                </div>
 
-                <select>
-                    <option>Select Course</option>
-                    <option>Share Market</option>
-                    <option>Insurance Training</option>
-                    <option>Other</option>
-                </select>
+                <div class="contact-box">
+                    <div class="icon">📧</div>
+                    <div>
+                        <h4 data-key="contact_email_label">Email</h4>
+                        <span>info@sohumfinance.in</span>
+                    </div>
+                </div>
+            </div>
 
-                <textarea placeholder="Your Message"></textarea>
+            <div class="contact-right">
+                <h3 data-key="contact_form_heading">Send Us a Message</h3>
+                <form>
+                    <input type="text" placeholder="Your Name" data-key-placeholder="contact_ph_name" required>
+                    <input type="email" placeholder="Your Email" data-key-placeholder="contact_ph_email" required>
+                    <input type="text" placeholder="Phone Number" data-key-placeholder="contact_ph_phone" required>
 
-                <button type="submit">Submit Inquiry</button>
-            </form>
+                    <select>
+                        <option data-key="contact_select_default">Select Course</option>
+                        <option data-key="contact_select_share">Share Market</option>
+                        <option data-key="contact_select_ins">Insurance Training</option>
+                        <option data-key="contact_select_other">Other</option>
+                    </select>
 
+                    <textarea placeholder="Your Message" data-key-placeholder="contact_ph_message"></textarea>
+                    <button type="submit" data-key="contact_submit">Submit Inquiry</button>
+                </form>
+            </div>
         </div>
+    </section>
 
+    <section class="map-section">
+        <div class="map-container">
+            <iframe
+                src="https://www.google.com/maps?q=YOUR_LOCATION_NAME&output=embed"
+                width="100%"
+                height="400"
+                style="border:0;"
+                allowfullscreen=""
+                loading="lazy">
+            </iframe>
+        </div>
+    </section>
+
+    <div class="floating-contact">
+        <a href="tel:+919876543210" class="float-call" title="Call Now" data-key-title="contact_float_call_title">
+            <i class="fas fa-phone"></i>
+        </a>
+
+        <a href="https://wa.me/919876543210" target="_blank" class="float-whatsapp" title="WhatsApp" data-key-title="contact_float_whatsapp_title">
+            <i class="fab fa-whatsapp"></i>
+        </a>
     </div>
 
-</section>
-
-<!-- GOOGLE MAP SECTION -->
-<section class="map-section">
-
-    <div class="map-container">
-        <iframe 
-            src="https://www.google.com/maps?q=YOUR_LOCATION_NAME&output=embed"
-            width="100%" 
-            height="400" 
-            style="border:0;" 
-            allowfullscreen="" 
-            loading="lazy">
-        </iframe>
-    </div>
-
-</section>
-
-
-
-<!-- Floating Contact Buttons -->
-<div class="floating-contact">
-
-    <!-- Call -->
-    <a href="tel:+919876543210" class="float-call" title="Call Now">
-        <i class="fas fa-phone"></i>
-    </a>
-
-    <!-- WhatsApp -->
-    <a href="https://wa.me/919876543210" target="_blank" class="float-whatsapp" title="WhatsApp">
-        <i class="fab fa-whatsapp"></i>
-    </a>
-
-</div>
     <div id="footer"></div>
-
-<!-- small note: in a real implementation each link would go to silo-specific URL -->
-     <script src="main.js"></script>
+    <script src="main.js"></script>
 </body>
 </html>
